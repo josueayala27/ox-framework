@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    width: 0;
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --text-gray: rgba(72, 71, 77);
+    --primary: rgba(74, 54, 251);
+    --success: rgba(31, 179, 91);
+    --danger: rgba(222, 27, 5);
+    --warn: rgba(244, 196, 28);
+    --dark: rgba(0, 0, 0);
+}
+
+.container {
+    padding: 100px;
+}
+
+.ox-alert {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .25s ease;
+    margin-top: 10px;
+    color: rgba(63, 66, 75);
+}
+
+.icon-alert {
+    margin-right: 10px;
+}
+
+.alert-primary {
+    border-left: 6px solid var(--primary);
+}
+
+.alert-primary:hover {
+    border-left: 6px solid var(--primary);
+    transform: translate(0, -2px);
+    box-shadow: 0px 5px 10px 0px rgba(74, 54, 251, .1);
+}
+
+.alert-primary .icon-alert i {
+    color: var(--primary);
+}
+
+
+/*Alert success*/
+
+.alert-success {
+    border-left: 6px solid var(--success);
+}
+
+.alert-success:hover {
+    border-left: 6px solid var(--success);
+    transform: translate(0, -2px);
+    box-shadow: 0px 5px 10px 0px rgba(31, 179, 91, .1);
+}
+
+.alert-success .icon-alert i {
+    color: var(--success);
+}
+
+
+/*Alert danger*/
+
+.alert-danger {
+    border-left: 6px solid var(--danger);
+}
+
+.alert-danger:hover {
+    border-left: 6px solid var(--danger);
+    transform: translate(0, -2px);
+    box-shadow: 0px 5px 10px 0px rgba(222, 27, 5, .1);
+}
+
+.alert-danger .icon-alert i {
+    color: var(--danger);
+}
+
+
+/*Alert warn*/
+
+.alert-warn {
+    border-left: 6px solid var(--warn);
+}
+
+.alert-warn:hover {
+    border-left: 6px solid var(--warn);
+    transform: translate(0, -2px);
+    box-shadow: 0px 5px 10px 0px rgba(244, 196, 28, .1);
+}
+
+.alert-warn .icon-alert i {
+    color: var(--warn);
+}
+
+
+/*
+.alert-warn .content-alert span {
+    color: var(--warn);
+}
+
+.alert-primary .content-alert span {
+    color: var(--primary);
+}
+
+.alert-success .content-alert span {
+    color: var(--success);
+}
+
+.alert-danger .content-alert span {
+    color: var(--danger);
+}
+*/
