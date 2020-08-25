@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+:root {
+    --text-gray: rgba(72, 71, 77);
+    --primary: rgba(74, 54, 251);
+    --success: rgba(31, 179, 91);
+    --danger: rgba(222, 27, 5);
+    --warn: rgba(244, 196, 28);
+    --dark: rgba(0, 0, 0);
+}
+
+.btn-ox {
+    color: var(--text-gray);
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    outline: none;
+    border: 0px;
+    border-radius: 9px;
+    transition: all .25s ease;
+}
+
+.btn-ox:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 10px 20px 0px rgba(72, 71, 77, .4);
+}
+
+.btn-ox:active {
+    transform: translate(0, -3px);
+}
+
+.btn-primary {
+    color: white;
+    background-color: var(--primary);
+}
+
+.btn-primary:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 10px 20px 0px rgba(74, 54, 251, .4);
+}
+
+.btn-primary:active {
+    transform: translate(0, -3px);
+}
+
+.btn-success {
+    color: white;
+    background-color: var(--success);
+}
+
+.btn-success:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 10px 20px 0px rgba(31, 179, 91, .4);
+}
+
+.btn-success:active {
+    transform: translate(0, -3px);
+}
+
+.btn-danger {
+    color: white;
+    background-color: var(--danger);
+}
+
+.btn-danger:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 10px 20px 0px rgba(222, 27, 5, .4);
+}
+
+.btn-danger:active {
+    transform: translate(0, -3px);
+}
+
+.btn-warn {
+    color: white;
+    background-color: var(--warn);
+}
+
+.btn-warn:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 10px 20px 0px rgba(244, 196, 28, .4);
+}
+
+.btn-warn:active {
+    transform: translate(0, -3px);
+}
+
+.btn-dark {
+    color: white;
+    background-color: var(--dark);
+}
+
+.btn-dark:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .4);
+}
+
+.btn-dark:active {
+    transform: translate(0, -3px);
+}
+
+.btn-facebook {
+    color: white;
+    background-color: rgba(23, 116, 235);
+}
+
+.btn-facebook:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 10px 20px 0px rgba(23, 116, 235, .4);
+}
+
+.btn-facebook:active {
+    transform: translate(0, -3px);
+    box-shadow: 0px 5px 10px 0px rgba(23, 116, 235, .4);
+}
+
+.btn-dribble {
+    color: white;
+    background-color: rgba(245, 0, 135);
+}
+
+.btn-dribble:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 10px 20px 0px rgba(245, 0, 135, .4);
+}
+
+.btn-dribble:active {
+    transform: translate(0, -3px);
+    box-shadow: 0px 5px 10px 0px rgba(245, 0, 135, .4);
+}
+
+.btn-twitch {
+    color: white;
+    background-color: rgba(145, 71, 255);
+}
+
+.btn-twitch:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 10px 20px 0px rgba(145, 71, 255, .4);
+}
+
+.btn-twitch:active {
+    transform: translate(0, -3px);
+    box-shadow: 0px 5px 10px 0px rgba(145, 71, 255, .4);
+}
+
+.btn-circle {
+    border-radius: 50px;
+}
