@@ -28,7 +28,6 @@ body {
 }
 
 .ox-card:hover {
-    transform: scale(.9);
     box-shadow: 0px 10px 20px 0px rgba(72, 71, 77, .1);
 }
 
