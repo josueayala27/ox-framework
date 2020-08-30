@@ -16,15 +16,6 @@ body {
     height: 100%;
 }
 
-:root {
-    --text-gray: rgba(72, 71, 77);
-    --primary: rgba(74, 54, 251);
-    --success: rgba(31, 179, 91);
-    --danger: rgba(222, 27, 5);
-    --warn: rgba(244, 196, 28);
-    --dark: rgba(0, 0, 0);
-}
-
 .btn-ox {
     color: var(--text-gray);
     cursor: pointer;

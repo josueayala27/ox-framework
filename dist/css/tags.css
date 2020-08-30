@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.ox-badge {
+    color: var(--ox-gray);
+    background-color: rgba(224, 227, 230);
+    display: inline-block;
+    padding: .50rem;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: .90rem;
+    transition: all .25s ease;
+}
+
+.ox-badge-primary {
+    background-color: var(--ox-primary);
+    color: rgba(255, 255, 255);
+}
+
+.ox-badge-success {
+    background-color: var(--ox-success);
+    color: rgba(255, 255, 255);
+}
+
+.ox-badge-danger {
+    background-color: var(--ox-danger);
+    color: rgba(255, 255, 255);
+}
+
+.ox-badge-warn {
+    background-color: var(--ox-warn);
+    color: rgba(255, 255, 255);
+}
+
+.ox-badge-dark {
+    background-color: var(--ox-dark);
+    color: rgba(255, 255, 255);
+}
+
+.ox-badge i {
+    font-size: 99%;
+}

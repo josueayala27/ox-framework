@@ -1,0 +1,39 @@
+/*!
+ * Ox v1.0.0 alpha (https://oxframework.com/)
+ * Copyright 2020-2020 The Ox Authors
+ */
+
+ :root {
+    --ox-gray: rgba(72, 71, 77);
+    --ox-primary: rgba(74, 54, 251);
+    --ox-success: rgba(31, 179, 91);
+    --ox-danger: rgba(222, 27, 5);
+    --ox-warn: rgba(244, 196, 28);
+    --ox-dark: rgba(0, 0, 0);
+    --ox-font: 'Josefin Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: var(--ox-font);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
