@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f4f7f8;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow: hidden;
+    color: rgb(var(--color));
+    width: 100%;
+}
+
+.ox-switch {
+    min-width: 48px;
+    display: flex;
+    background: rgba(74, 54, 251, .15);
+    position: relative;
+    height: 28px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+.ox-switch-input {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    opacity: 0;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.ox-toggle-check {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: rgb(74, 54, 251);
+    z-index: 200;
+    transition: all .25s ease;
+    box-shadow: 0px 10px 20px 0px rgba(99, 107, 144, .35);
+    opacity: .4;
+}
+
+.ox-switch:hover {
+    background-color: rgba(74, 54, 251, .25);
+}
+
+.ox-switch-input:checked~.ox-toggle-check {
+    left: 17px;
+    opacity: 1;
+}
+
+.ox-switch:active .ox-toggle-check {
+    width: 21px;
+}
+
+.ox-switch:active .ox-switch-input:checked~.ox-toggle-check {
+    left: 17px;
+}
