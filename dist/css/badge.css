@@ -23,27 +23,27 @@ body {
 }
 
 .ox-badge-primary {
-    background-color: var(--ox-primary);
+    background-color: rgba(var(--ox-primary));
     color: rgba(255, 255, 255);
 }
 
 .ox-badge-success {
-    background-color: var(--ox-success);
+    background-color: rgba(var(--ox-success));
     color: rgba(255, 255, 255);
 }
 
 .ox-badge-danger {
-    background-color: var(--ox-danger);
+    background-color: rgba(var(--ox-danger));
     color: rgba(255, 255, 255);
 }
 
 .ox-badge-warn {
-    background-color: var(--ox-warn);
+    background-color: rgba(var(--ox-warn));
     color: rgba(255, 255, 255);
 }
 
 .ox-badge-dark {
-    background-color: var(--ox-dark);
+    background-color: rgba(var(--ox-dark));
     color: rgba(255, 255, 255);
 }
 

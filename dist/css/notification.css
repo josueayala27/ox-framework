@@ -1,0 +1,49 @@
+body {
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+}
+
+.notification {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background: rgb(27, 92, 255);
+    box-shadow: 0px 10px 25px 0px rgba(27, 92, 255, .2);
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 20px 8px 20px 20px;
+    color: #fff;
+    visibility: hidden;
+    transition: all .3s ease;
+    transform: translate(100%);
+    width: calc(100% - 40px);
+    max-width: 400px;
+}
+
+.notification h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.notification p {
+    font-size: .85rem;
+    opacity: .7;
+}
+
+.notification.visible {
+    visibility: visible;
+    transform: translate(0);
+}
+
+.notification.remove {
+    opacity: 0;
+    transform: translate(0) scale(.8) !important;
+}

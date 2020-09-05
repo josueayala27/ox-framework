@@ -8,7 +8,6 @@
 
 .ox-avatar {
     --vs-color: var(--vs-gray-2);
-    border-radius: 35%;
     z-index: 1;
     width: 44px;
     height: 44px;
@@ -20,6 +19,47 @@
     -ms-user-select: none;
     user-select: none;
     border-radius: 50%;
+}
+
+.ox-avatar-xs {
+    width: 30px;
+    height: 30px;
+}
+
+.ox-avatar-sm {
+    width: 37px;
+    height: 37px;
+}
+
+.ox-avatar-md {
+    width: 44px;
+    height: 44px;
+}
+
+.ox-avatar-lg {
+    width: 60px;
+    height: 60px;
+}
+
+.ox-avatar-xl {
+    width: 70px;
+    height: 70px;
+}
+
+.ox-avatar-square {
+    border-radius: 0%;
+}
+
+.ox-avatar-square .ox-avatar-badge {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 2px solid white;
+    left: -5px;
+    font-size: .6rem;
+    font-weight: 700;
+    z-index: 200;
 }
 
 .ox-avatar-image {
