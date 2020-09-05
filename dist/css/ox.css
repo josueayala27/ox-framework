@@ -4,12 +4,17 @@
  */
 
  :root {
-    --ox-gray: rgba(72, 71, 77);
-    --ox-primary: rgba(74, 54, 251);
-    --ox-success: rgba(31, 179, 91);
-    --ox-danger: rgba(222, 27, 5);
-    --ox-warn: rgba(244, 196, 28);
-    --ox-dark: rgba(0, 0, 0);
+    /*Ox color palette*/
+    --ox-gray: 72, 71, 77;
+    --ox-primary: 74, 54, 251;
+    --ox-success: 31, 179, 91;
+    --ox-danger: 222, 27, 5;
+    --ox-warn: 244, 196, 28;
+    --ox-dark: 0, 0, 0;
+    /*Ox social colors*/
+    --ox-facebook: 17, 152, 246;
+    --ox-whatsapp: 15, 194, 68;
+    /*Ox typography*/
     --ox-font: 'Josefin Sans', sans-serif;
 }
 

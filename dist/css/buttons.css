@@ -1,21 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-html {
-    height: 100%;
-}
-
-body {
-    font-family: 'Josefin Sans', sans-serif;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
 .btn-ox {
     color: var(--text-gray);
     cursor: pointer;
@@ -38,12 +21,12 @@ body {
 
 .btn-primary {
     color: white;
-    background-color: var(--primary);
+    background-color: rgba(var(--ox-primary));
 }
 
 .btn-primary:hover {
     transform: translate(0, -6px);
-    box-shadow: 0px 10px 20px 0px rgba(74, 54, 251, .4);
+    box-shadow: 0px 10px 20px 0px rgba(var(--ox-primary), .3);
 }
 
 .btn-primary:active {
@@ -52,12 +35,12 @@ body {
 
 .btn-success {
     color: white;
-    background-color: var(--success);
+    background-color: rgba(var(--ox-success));
 }
 
 .btn-success:hover {
     transform: translate(0, -6px);
-    box-shadow: 0px 10px 20px 0px rgba(31, 179, 91, .4);
+    box-shadow: 0px 10px 20px 0px rgba(var(--ox-success), .3);
 }
 
 .btn-success:active {

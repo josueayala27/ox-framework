@@ -2,64 +2,114 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background: #f4f7f8;
     height: calc(var(--vh, 1vh) * 100);
-    overflow: hidden;
-    color: rgb(var(--color));
     width: 100%;
 }
 
 .ox-switch {
     min-width: 48px;
     display: flex;
+    align-items: center;
     background: rgba(74, 54, 251, .15);
     position: relative;
     height: 28px;
     border-radius: 25px;
     cursor: pointer;
-    transition: all .25s ease;
+    transition: all .25s ease
 }
 
 .ox-switch-input {
     width: 100%;
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     height: 100%;
     opacity: 0;
     z-index: 100;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .ox-toggle-check {
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     margin: 5px;
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background: rgb(74, 54, 251);
+    background: #4a36fb;
     z-index: 200;
     transition: all .25s ease;
-    box-shadow: 0px 10px 20px 0px rgba(99, 107, 144, .35);
-    opacity: .4;
+    box-shadow: 0 10px 20px 0 rgba(99, 107, 144, .35);
+    opacity: .4
 }
 
 .ox-switch:hover {
-    background-color: rgba(74, 54, 251, .25);
+    background-color: rgba(74, 54, 251, .25)
 }
 
 .ox-switch-input:checked~.ox-toggle-check {
     left: 17px;
-    opacity: 1;
+    opacity: 1
+}
+
+.ox-switch-input:checked~.ox-check-text {
+    left: 27px;
+    opacity: 0!important
 }
 
 .ox-switch:active .ox-toggle-check {
-    width: 21px;
+    width: 21px
 }
 
 .ox-switch:active .ox-switch-input:checked~.ox-toggle-check {
-    left: 17px;
+    left: 17px
+}
+
+.ox-switch-danger {
+    background-color: rgba(var(--ox-danger), .15)
+}
+
+.ox-switch-danger:hover {
+    background-color: rgba(var(--ox-danger), .25)
+}
+
+.ox-switch-danger .ox-toggle-check {
+    background: rgba(var(--ox-danger))
+}
+
+.ox-switch-success {
+    background-color: rgba(var(--ox-success), .15)
+}
+
+.ox-switch-success:hover {
+    background-color: rgba(var(--ox-success), .25)
+}
+
+.ox-switch-success .ox-toggle-check {
+    background: rgba(var(--ox-success))
+}
+
+.ox-switch-warn {
+    background-color: rgba(var(--ox-warn), .15)
+}
+
+.ox-switch-warn:hover {
+    background-color: rgba(var(--ox-warn), .25)
+}
+
+.ox-switch-warn .ox-toggle-check {
+    background: rgba(var(--ox-warn))
+}
+
+.ox-switch-dark {
+    background-color: rgba(var(--ox-dark), .15)
+}
+
+.ox-switch-dark:hover {
+    background-color: rgba(var(--ox-dark), .25)
+}
+
+.ox-switch-dark .ox-toggle-check {
+    background: rgba(var(--ox-dark))
 }

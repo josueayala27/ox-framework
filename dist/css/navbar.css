@@ -1,0 +1,127 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+}
+
+.ox-nav {
+    width: 100%;
+    background-color: white;
+}
+
+
+/*Nav fixed*/
+
+.ox-nav-fixed {
+    position: fixed;
+}
+
+.ox-nav-content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.ox-nav-item {
+    outline: none;
+    cursor: pointer;
+    font-family: var(--ox-font);
+    padding: 10px 15px;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    font-size: .85rem;
+    opacity: .7;
+    -webkit-transition: all .25s ease, color 0s;
+    transition: all .25s ease, color 0s;
+    color: inherit;
+    color: #6C7885;
+}
+
+.ox-nav-active-primary {
+    background-color: rgba(var(--ox-primary));
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0px rgba(var(--ox-primary), .3);
+}
+
+.ox-nav-active-success {
+    background-color: rgba(var(--ox-success));
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0px rgba(var(--ox-success), .3);
+}
+
+.ox-nav-active-danger {
+    background-color: rgba(var(--ox-danger));
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0px rgba(var(--ox-danger), .3);
+}
+
+.ox-nav-active-warn {
+    background-color: rgba(var(--ox-warn));
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0px rgba(var(--ox-warn), .3);
+}
+
+.ox-nav-active {
+    background-color: rgba(var(--ox-primary));
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0px rgba(var(--ox-primary), .3);
+}
+
+.ox-nav-primary {
+    background-color: rgb(var(--ox-primary));
+}
+
+.ox-nav-success {
+    background-color: rgb(var(--ox-success));
+}
+
+.ox-nav-danger {
+    background-color: rgb(var(--ox-danger));
+}
+
+.ox-nav-warn {
+    background-color: rgb(var(--ox-warn));
+}
+
+.ox-nav-dark {
+    background-color: rgb(var(--ox-dark));
+}
+
+
+/*Cambio de colores para el contenido del nav*/
+
+.ox-nav-primary .ox-nav-content {
+    color: white;
+    background-color: rgb(var(--ox-primary));
+}
+
+.ox-nav-success .ox-nav-content {
+    color: white;
+    background-color: rgb(var(--ox-success));
+}
+
+.ox-nav-danger .ox-nav-content {
+    color: white;
+    background-color: rgb(var(--ox-danger));
+}
+
+.ox-nav-warn .ox-nav-content {
+    color: white;
+    background-color: rgb(var(--ox-warn));
+}
+
+.ox-nav-dark .ox-nav-content {
+    color: white;
+    background-color: rgb(var(--ox-dark));
+}
