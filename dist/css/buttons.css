@@ -49,12 +49,12 @@
 
 .btn-danger {
     color: white;
-    background-color: var(--danger);
+    background-color: rgba(var(--ox-danger));
 }
 
 .btn-danger:hover {
     transform: translate(0, -6px);
-    box-shadow: 0px 10px 20px 0px rgba(222, 27, 5, .4);
+    box-shadow: 0px 10px 20px 0px rgba(var(--ox-danger), .3);
 }
 
 .btn-danger:active {

@@ -11,15 +11,6 @@ body {
     height: 100%;
 }
 
-:root {
-    --text-gray: rgba(72, 71, 77);
-    --primary: rgba(74, 54, 251);
-    --success: rgba(31, 179, 91);
-    --danger: rgba(222, 27, 5);
-    --warn: rgba(244, 196, 28);
-    --dark: rgba(0, 0, 0);
-}
-
 .container {
     padding: 100px;
 }
@@ -40,68 +31,68 @@ body {
 }
 
 .alert-primary {
-    border-left: 6px solid var(--primary);
+    border-left: 6px solid rgba(var(--ox-primary));
 }
 
 .alert-primary:hover {
-    border-left: 6px solid var(--primary);
+    border-left: 6px solid rgba(var(--ox-primary));
     transform: translate(0, -2px);
-    box-shadow: 0px 5px 10px 0px rgba(74, 54, 251, .1);
+    box-shadow: 0px 5px 10px 0px rgba(var(--ox-primary), .1);
 }
 
 .alert-primary .icon-alert i {
-    color: var(--primary);
+    color: rgba(var(--ox-primary));
 }
 
 
 /*Alert success*/
 
 .alert-success {
-    border-left: 6px solid var(--success);
+    border-left: 6px solid rgba(var(--ox-success));
 }
 
 .alert-success:hover {
-    border-left: 6px solid var(--success);
+    border-left: 6px solid rgba(var(--ox-success));
     transform: translate(0, -2px);
-    box-shadow: 0px 5px 10px 0px rgba(31, 179, 91, .1);
+    box-shadow: 0px 5px 10px 0px rgba(var(--ox-success), .1);
 }
 
 .alert-success .icon-alert i {
-    color: var(--success);
+    color: rgba(var(--ox-success));
 }
 
 
 /*Alert danger*/
 
 .alert-danger {
-    border-left: 6px solid var(--danger);
+    border-left: 6px solid rgba(var(--ox-danger));
 }
 
 .alert-danger:hover {
-    border-left: 6px solid var(--danger);
+    border-left: 6px solid rgba(var(--ox-danger));
     transform: translate(0, -2px);
-    box-shadow: 0px 5px 10px 0px rgba(222, 27, 5, .1);
+    box-shadow: 0px 5px 10px 0px rgba(var(--ox-danger), .1);
 }
 
 .alert-danger .icon-alert i {
-    color: var(--danger);
+    color: rgba(var(--ox-danger));
 }
 
 
 /*Alert warn*/
 
 .alert-warn {
-    border-left: 6px solid var(--warn);
+    border-left: 6px solid rgba(var(--ox-warn));
 }
 
 .alert-warn:hover {
-    border-left: 6px solid var(--warn);
+    border-left: 6px solid rgba(var(--ox-warn));
     transform: translate(0, -2px);
-    box-shadow: 0px 5px 10px 0px rgba(244, 196, 28, .1);
+    box-shadow: 0px 5px 10px 0px rgba(var(--ox-warn), .1);
 }
 
 .alert-warn .icon-alert i {
-    color: var(--warn);
+    color: rgba(var(--ox-warn));
 }
 
 
