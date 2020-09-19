@@ -1,0 +1,32 @@
+@ox-primary: 23, 137, 230;
+@ox-white-color: 255, 255, 255;
+/*Tipografia*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@ox-typography: "Josefin Sans";
+/*borders*/
+@border-radius: 5px;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.block{
+    width: 100%;
+}
+
+.ox-btn {
+  outline: none;
+  border: 0;
+  background-color: rgba(@ox-primary);
+  border-radius: @border-radius;
+  padding: 10px;
+  color: rgba(@ox-white-color);
+  font-family: @ox-typography;
+  cursor: pointer;
+  /*Ripple effect*/
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+

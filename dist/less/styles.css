@@ -1,0 +1,30 @@
+/*Tipografia*/
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v16/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQXME.ttf) format('truetype');
+}
+/*borders*/
+body {
+  margin: 0;
+  padding: 0;
+}
+.block {
+  width: 100%;
+}
+.ox-btn {
+  outline: none;
+  border: 0;
+  background-color: rgba(23, 137, 230);
+  border-radius: 5px;
+  padding: 10px;
+  color: rgba(255, 255, 255);
+  font-family: "Josefin Sans";
+  cursor: pointer;
+  /*Ripple effect*/
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}

@@ -1,0 +1,76 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ox-card {
+  max-width: 350px;
+  background-color: rgba(255, 255, 255);
+  border-radius: 20px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.ox-card:hover {
+  box-shadow: 0 5px 20px 0 rgba(124, 91, 91, 0.2);
+  transform: translate(0, -2px);
+}
+.ox-card .ox-card-img {
+  display: flex;
+  border-radius: 20px;
+  position: relative;
+  height: 250px;
+  max-height: 250px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+.ox-card .ox-card-img img {
+  width: 100%;
+  height: auto;
+  transition: all 0.25s ease;
+}
+.ox-card .ox-card-img img:hover {
+  transform: scale(1.04);
+}
+.ox-card .ox-card-img .ox-card-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+.ox-card .ox-card-img .ox-card-buttons button {
+  font-size: 1rem;
+  -webkit-backdrop-filter: saturate(300%) blur(20px);
+  backdrop-filter: saturate(300%) blur(20px);
+}
+.ox-card .ox-card-text {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ox-card .ox-card-text .ox-title-card {
+  color: black;
+}
+.ox-card .ox-card-text p {
+  color: rgba(135, 145, 156);
+}
+.ox-btn {
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px;
+  outline: none;
+  border: 0px;
+  border-radius: 9px;
+  transition: all 0.25s ease;
+  background-color: transparent;
+  color: white;
+}
+.text-dark {
+  color: black;
+}

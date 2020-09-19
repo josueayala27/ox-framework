@@ -21,6 +21,10 @@
     border-radius: 50%;
 }
 
+.ox-avatar:hover {
+    border-radius: 25%;
+}
+
 .ox-avatar-xs {
     width: 30px;
     height: 30px;
