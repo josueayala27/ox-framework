@@ -1,0 +1,40 @@
+@ox-primary-color: 23, 137, 230;
+.ox-tabs {
+  width: 20rem;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  input {
+    display: none;
+  }
+  label {
+    flex: 1;
+    text-align: center;
+    line-height: 3.6rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    &:hover {
+      background-color: white;
+    }
+  }
+  input:checked + label {
+    box-shadow: inset 0 -0.2rem rgba(@ox-primary-color);
+    color: rgba(@ox-primary-color);
+  }
+  .ox-container-tabs {
+    display: flex;
+    overflow: hidden;
+  }
+  .ox-content-tab {
+    flex: 0 0 20rem;
+    padding: 2.4rem;
+    box-sizing: border-box;
+  }
+}
+
+.ox-tabs:nth-of-type(2):checked ~ .ox-content-tab .ox-content-tab {
+  transform: translateX(-100%);
+}
+.ox-tabs:nth-of-type(3):checked ~ .ox-content-tab .ox-content-tab {
+  transform: translateX(-200%);
+}
