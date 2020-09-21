@@ -1,3 +1,4 @@
+@import "./ox.less";
 .ox-btn {
   font-family: "Josefin Sans", sans-serif;
   outline: none;
@@ -8,35 +9,166 @@
   color: white;
   text-decoration: none;
   border-radius: 8px;
-  background-color: rgba(23, 137, 230);
+  color: black;
   font-size: 0.8rem;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.25s ease;
   &:hover {
     transform: translate(0, -2px);
-    box-shadow: 0px 5px 10px -2px rgba(0,0,0,.20);
+    box-shadow: 0px 5px 10px -2px rgba(@ox-primary, 0.2);
   }
   &:active {
     transform: translate(0, -1px);
-    filter:brightness(1.2);
-    box-shadow: 0px 1px 10px -2px rgba(0,0,0,.20);
+    box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.2);
   }
-  span {
-    position: absolute;
-    background: #fff;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    border-radius: 50%;
-    animation: animate 1s linear infinite;
+  &.ox-btn-flat {
+    background-color: rgba(@ox-dark, 0.04);
+    color: rgba(@ox-dark);
+  }
+  &.ox-btn-outline {
+    background-color: rgba(@ox-dark, 0.04);
+    color: rgba(@ox-dark);
+    border: 2px solid rgba(@ox-dark, 0.6);
   }
 }
-.ox-btn-transparent {
-  -webkit-backdrop-filter: saturate(300%) blur(20px);
-  backdrop-filter: saturate(300%) blur(20px);
+
+.ox-btn-primary {
+  background-color: rgba(@ox-primary);
+  color: white;
+  &:hover {
+    transform: translate(0, -2px);
+    box-shadow: 0px 5px 10px -2px rgba(@ox-primary, 0.2);
+  }
+  &:active {
+    transform: translate(0, -1px);
+    filter: brightness(1.04);
+    box-shadow: 0px 1px 10px -2px rgba(@ox-primary, 0.2);
+  }
+  &.ox-btn-flat {
+    background-color: rgba(@ox-primary, 0.1);
+    color: rgba(@ox-primary);
+  }
+  &.ox-btn-outline {
+    background-color: rgba(@ox-primary, 0.04);
+    color: rgba(@ox-primary);
+    border: 2px solid rgba(@ox-primary, 1);
+  }
 }
+.block {
+  width: 100%;
+}
+.ox-btn-square {
+  border-radius: 0px;
+}
+
+.ox-btn-success {
+  background-color: rgba(@ox-success);
+  color: white;
+  &:hover {
+    transform: translate(0, -2px);
+    box-shadow: 0px 5px 10px -2px rgba(@ox-success, 0.2);
+  }
+  &:active {
+    transform: translate(0, -1px);
+    filter: brightness(1.04);
+    box-shadow: 0px 1px 10px -2px rgba(@ox-success, 0.2);
+  }
+  &.ox-btn-flat {
+    background-color: rgba(@ox-success, 0.1);
+    color: rgba(@ox-success);
+  }
+  &.ox-btn-outline {
+    background-color: rgba(@ox-success, 0.04);
+    color: rgba(@ox-success);
+    border: 2px solid rgba(@ox-success, 1);
+  }
+}
+
 .ox-btn-danger {
-  background-color: rgba(255, 77, 79);
+  background-color: rgba(@ox-danger);
+  color: white;
+  &:hover {
+    transform: translate(0, -2px);
+    box-shadow: 0px 5px 10px -2px rgba(@ox-danger, 0.2);
+  }
+  &:active {
+    transform: translate(0, -1px);
+    filter: brightness(1.04);
+    box-shadow: 0px 1px 10px -2px rgba(@ox-danger, 0.2);
+  }
+  &.ox-btn-flat {
+    background-color: rgba(@ox-danger, 0.1);
+    color: rgba(@ox-danger);
+  }
+  &.ox-btn-outline {
+    background-color: rgba(@ox-danger, 0.04);
+    color: rgba(@ox-danger);
+    border: 2px solid rgba(@ox-danger, 1);
+  }
+}
+
+.ox-btn-warn {
+  background-color: rgba(@ox-warn);
+  color: white;
+  &:hover {
+    transform: translate(0, -2px);
+    box-shadow: 0px 5px 10px -2px rgba(@ox-warn, 0.2);
+  }
+  &:active {
+    transform: translate(0, -1px);
+    filter: brightness(1.04);
+    box-shadow: 0px 1px 10px -2px rgba(@ox-warn, 0.2);
+  }
+  &.ox-btn-flat {
+    background-color: rgba(@ox-warn, 0.1);
+    color: rgba(@ox-warn);
+  }
+  &.ox-btn-outline {
+    background-color: rgba(@ox-warn, 0.04);
+    color: rgba(@ox-warn);
+    border: 2px solid rgba(@ox-warn, 1);
+  }
+}
+
+.ox-btn-dark {
+  background-color: rgba(@ox-dark);
+  color: white;
+  &:hover {
+    transform: translate(0, -2px);
+    box-shadow: 0px 5px 10px -2px rgba(@ox-dark, 0.2);
+  }
+  &:active {
+    transform: translate(0, -1px);
+    filter: brightness(1.04);
+    box-shadow: 0px 1px 10px -2px rgba(@ox-dark, 0.2);
+  }
+  &.ox-btn-flat {
+    background-color: rgba(@ox-dark, 0.04);
+    color: rgba(@ox-dark);
+  }
+  &.ox-btn-outline {
+    background-color: rgba(@ox-dark, 0.04);
+    color: rgba(@ox-dark);
+    border: 2px solid rgba(@ox-dark, 1);
+  }
+}
+
+.ox-btn-rounded {
+  border-radius: 50px;
+}
+
+.ox-group-buttons {
+  display: flex;
+  button:first-child {
+    border-radius: 8px 0px 0px 8px;
+  }
+  button {
+    border-radius: 0px 0px 0px 0px;
+  }
+  button:last-child {
+    border-radius: 0px 8px 8px 0px;
+  }
 }
 
 @keyframes animate {
