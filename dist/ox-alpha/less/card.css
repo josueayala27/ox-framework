@@ -46,9 +46,21 @@ body {
   padding: 10px;
 }
 .ox-card .ox-card-img .ox-card-buttons button {
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px;
+  outline: none;
+  border: 0px;
+  border-radius: 9px;
+  transition: all 0.25s ease;
+  background-color: transparent;
   font-size: 1rem;
+  color: white;
   -webkit-backdrop-filter: saturate(300%) blur(20px);
   backdrop-filter: saturate(300%) blur(20px);
+}
+.ox-card .ox-card-img .ox-card-buttons .text-dark {
+  color: black;
 }
 .ox-card .ox-card-text {
   padding-left: 10px;
@@ -60,17 +72,9 @@ body {
 .ox-card .ox-card-text p {
   color: rgba(135, 145, 156);
 }
-.ox-btn {
-  cursor: pointer;
-  font-family: "Josefin Sans", sans-serif;
-  padding: 10px;
-  outline: none;
-  border: 0px;
-  border-radius: 9px;
-  transition: all 0.25s ease;
-  background-color: transparent;
-  color: white;
-}
 .text-dark {
   color: black;
+}
+.ox-mb-20 {
+  margin-bottom: 20px;
 }

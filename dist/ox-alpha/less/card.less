@@ -46,9 +46,21 @@ body {
       right: 0;
       padding: 10px;
       button {
+        cursor: pointer;
+        font-family: "Josefin Sans", sans-serif;
+        padding: 10px;
+        outline: none;
+        border: 0px;
+        border-radius: 9px;
+        transition: all 0.25s ease;
+        background-color: transparent;
         font-size: 1rem;
+        color: white;
         -webkit-backdrop-filter: saturate(300%) blur(20px);
         backdrop-filter: saturate(300%) blur(20px);
+      }
+      .text-dark {
+        color: black;
       }
     }
   }
@@ -65,17 +77,12 @@ body {
 }
 
 .ox-btn {
-  cursor: pointer;
-  font-family: "Josefin Sans", sans-serif;
-  padding: 10px;
-  outline: none;
-  border: 0px;
-  border-radius: 9px;
-  transition: all 0.25s ease;
-  background-color: transparent;
-  color: white;
 }
 
-.text-dark{
-    color: black;
+.text-dark {
+  color: black;
+}
+
+.ox-mb-20 {
+  margin-bottom: 20px;
 }
