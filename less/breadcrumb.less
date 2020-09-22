@@ -1,0 +1,46 @@
+@import "./ox.less";
+.ox-breadcrumb {
+  font-family: @ox-font;
+  box-shadow: 0px 5px 10px -2px rgba(15, 17, 26, 0.1);
+  box-shadow: black;
+  padding: 2px;
+  border-radius: @border-radius;
+  transition: all 0.25s ease;
+  &:hover {
+    transform: translate(0, 1px);
+    box-shadow: 0px 1px 5px -2px rgba(15, 17, 26, 0.1);
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      display: inline;
+      a {
+        &.ox-breadcrumb-active {
+          color: rgba(@ox-primary);
+          &.ox-success {
+            color: rgba(@ox-success);
+          }
+          &.ox-danger {
+            color: rgba(@ox-danger);
+          }
+          &.ox-warn {
+            color: rgba(@ox-warn);
+          }
+          &.ox-dark {
+            color: rgba(@ox-dark);
+          }
+        }
+        color: rgba(@ox-gray);
+        text-decoration: none;
+      }
+    }
+    li + li {
+      &::before {
+        padding: 8px;
+        color: rgba(@ox-gray);
+        content: " \2022 ";
+      }
+    }
+  }
+}

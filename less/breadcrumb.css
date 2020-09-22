@@ -1,0 +1,72 @@
+:root {
+    /*Ox color palette*/
+    --ox-gray: 72, 71, 77;
+    --ox-primary: 74, 54, 251;
+    --ox-success: 31, 179, 91;
+    --ox-danger: 255, 77, 79;
+    --ox-warn: 244, 196, 28;
+    --ox-dark: 0, 0, 0;
+    /*Ox social colors*/
+    --ox-facebook: 17, 152, 246;
+    --ox-whatsapp: 15, 194, 68: ;
+    /*Ox typography*/
+    --ox-font: "Josefin Sans", sans-serif;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.ox-breadcrumb {
+    font-family: "Josefin Sans", sans-serif;
+    box-shadow: 0px 5px 10px -2px rgba(15, 17, 26, 0.1);
+    box-shadow: black;
+    padding: 2px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+.ox-breadcrumb:hover {
+    transform: translate(0, 1px);
+    box-shadow: 0px 1px 5px -2px rgba(15, 17, 26, 0.1);
+}
+
+.ox-breadcrumb ul {
+    display: flex;
+    list-style: none;
+}
+
+.ox-breadcrumb ul li {
+    display: inline;
+}
+
+.ox-breadcrumb ul li a {
+    color: rgba(72, 71, 77);
+    text-decoration: none;
+}
+
+.ox-breadcrumb ul li a.ox-breadcrumb-active {
+    color: rgba(74, 54, 251);
+}
+
+.ox-breadcrumb ul li a.ox-breadcrumb-active.ox-success {
+    color: rgba(31, 179, 91);
+}
+
+.ox-breadcrumb ul li a.ox-breadcrumb-active.ox-danger {
+    color: rgba(255, 77, 79);
+}
+
+.ox-breadcrumb ul li a.ox-breadcrumb-active.ox-warn {
+    color: rgba(244, 196, 28);
+}
+
+.ox-breadcrumb ul li a.ox-breadcrumb-active.ox-dark {
+    color: rgba(0, 0, 0);
+}
+
+.ox-breadcrumb ul li+li::before {
+    padding: 8px;
+    color: rgba(72, 71, 77);
+    content: " \2022 ";
+}
