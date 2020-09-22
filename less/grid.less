@@ -1,0 +1,71 @@
+@import "./ox.less";
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+.ox-grid {
+  overflow: hidden;
+  padding: 0;
+  .ox-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    .ox-col-12 {
+      width: 100%;
+      position: relative;
+    }
+    .ox-col-6 {
+      width: 50%;
+      position: relative;
+    }
+    .ox-col-4 {
+      width: 33.33%;
+      position: relative;
+    }
+    .ox-col-3 {
+      width: 25%;
+      position: relative;
+    }
+    .ox-col-2 {
+      width: 16.66%;
+      position: relative;
+    }
+    .ox-col-1 {
+      width: 8.33%;
+      position: relative;
+    }
+  }
+}
+.ox-flex-start {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.ox-flex-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.ox-flex-end {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.ox-space-around {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.ox-space-between {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
