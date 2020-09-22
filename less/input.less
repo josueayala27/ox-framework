@@ -1,0 +1,102 @@
+@import "ox.less";
+.ox-input-group {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+  transition: all 0.25s ease;
+  .ox-group-icon {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 10px;
+    z-index: 100;
+    &.ox-right-icon {
+    }
+  }
+  &:focus {
+    border: 2px solid rgba(25, 91, 255);
+  }
+  .ox-form-control {
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background: rgba(240, 243, 244);
+    outline: none;
+    font-family: "Josefin Sans", sans-serif;
+    transition: all 0.25s ease;
+    font-size: 0.9rem;
+    &.ox-input-square {
+      border-radius: 0px;
+    }
+    &.ox-input-primary {
+      padding-left: 30px;
+      &:hover {
+        border: 2px solid rgba(0, 0, 0, 0.1);
+      }
+      &:focus {
+        border: 2px solid rgba(@ox-primary);
+      }
+    }
+    &.ox-input-success {
+      padding-left: 30px;
+      &:hover {
+        border: 2px solid rgba(0, 0, 0, 0.1);
+      }
+      &:focus {
+        border: 2px solid rgba(@ox-success);
+      }
+    }
+    &.ox-input-danger {
+      padding-left: 30px;
+      &:hover {
+        border: 2px solid rgba(0, 0, 0, 0.1);
+      }
+      &:focus {
+        border: 2px solid rgba(@ox-danger);
+      }
+    }
+    &.ox-input-warn {
+      padding-left: 30px;
+      &:hover {
+        border: 2px solid rgba(0, 0, 0, 0.1);
+      }
+      &:focus {
+        border: 2px solid rgba(@ox-warn);
+      }
+    }
+    &.ox-input-dark {
+      padding-left: 30px;
+      &:hover {
+        border: 2px solid rgba(0, 0, 0, 0.1);
+      }
+      &:focus {
+        border: 2px solid rgba(@ox-dark);
+      }
+    }
+  }
+}
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.block {
+  width: 100%;
+}
