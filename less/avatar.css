@@ -46,6 +46,10 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+body .ox-avatar {
+  margin: 2px;
 }
 .ox-avatar {
   --vs-color: var(--vs-gray-2);
@@ -61,16 +65,52 @@ body {
   user-select: none;
   border-radius: 50%;
 }
-.ox-avatar .ox-avatar-square .ox-avatar-badge {
+.ox-avatar.ox-avatar-square {
+  border-radius: 0%;
+}
+.ox-avatar.ox-avatar-xs {
+  width: 30px;
+  height: 30px;
+}
+.ox-avatar.ox-avatar-sm {
+  width: 37px;
+  height: 37px;
+}
+.ox-avatar.ox-avatar-md {
+  width: 44px;
+  height: 44px;
+}
+.ox-avatar.ox-avatar-lg {
+  width: 60px;
+  height: 60px;
+}
+.ox-avatar.ox-avatar-xl {
+  width: 70px;
+  height: 70px;
+}
+.ox-avatar .ox-avatar-badge {
   position: absolute;
   width: 13px;
   height: 13px;
+  background: rgba(31, 179, 91, 1);
   border-radius: 50%;
   border: 2px solid white;
-  left: -5px;
+  bottom: -4px;
   font-size: 0.6rem;
   font-weight: 700;
   z-index: 200;
+}
+.ox-avatar .ox-avatar-badge.ox-avatar-warn {
+  background: rgba(244, 196, 28, 1);
+}
+.ox-avatar .ox-avatar-badge.ox-avatar-primary {
+  background: rgba(74, 54, 251, 1);
+}
+.ox-avatar .ox-avatar-badge.ox-avatar-danger {
+  background: rgba(255, 77, 79, 1);
+}
+.ox-avatar .ox-avatar-badge.ox-avatar-dark {
+  background: rgba(0, 0, 0, 1);
 }
 .ox-avatar .ox-avatar-image {
   color: #fff;
@@ -93,7 +133,11 @@ body {
   box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.05);
 }
 .ox-avatar .ox-avatar-image img:hover {
-  transform: scale(1.09);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.08);
+  overflow: hidden;
 }
 .ox-avatar .ox-avatar-image img {
   height: 100%;
@@ -104,31 +148,7 @@ body {
   transition: all 0.25s ease;
   border-radius: inherit;
 }
-.ox-avatar-xs {
-  width: 30px;
-  height: 30px;
-}
-.ox-avatar-sm {
-  width: 37px;
-  height: 37px;
-}
-.ox-avatar-md {
-  width: 44px;
-  height: 44px;
-}
-.ox-avatar-lg {
-  width: 60px;
-  height: 60px;
-}
-.ox-avatar-xl {
-  width: 70px;
-  height: 70px;
-}
-.ox-avatar-square {
-  border-radius: 0%;
-}
-.ox-avatar-text {
-  /*background: rgba(var(--ox-primary), 1);*/
+.ox-avatar-icon {
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,27 +167,6 @@ body {
   -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.05);
 }
-.ox-avatar-badge {
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  background: rgba(var(--ox-success), 1);
-  border-radius: 50%;
-  border: 2px solid white;
-  bottom: -4px;
-  font-size: 0.6rem;
-  font-weight: 700;
-  z-index: 200;
-}
-.ox-avatar-warn {
-  background: rgba(244, 196, 28, 1);
-}
-.ox-avatar-primary {
-  background: rgba(74, 54, 251, 1);
-}
-.ox-avatar-danger {
-  background: rgba(255, 77, 79, 1);
-}
-.ox-avatar-dark {
-  background: rgba(0, 0, 0, 1);
+.ox-avatar-icon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }

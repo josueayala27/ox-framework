@@ -1,9 +1,13 @@
 @import "./ox.less";
-body{
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  .ox-avatar {
+    margin: 2px;
+  }
 }
 .ox-avatar {
   --vs-color: var(--vs-gray-2);
@@ -18,16 +22,55 @@ body{
   -ms-user-select: none;
   user-select: none;
   border-radius: 50%;
-  .ox-avatar-square .ox-avatar-badge {
+  &.ox-avatar-square {
+    border-radius: 0%;
+  }
+  &.ox-avatar-xs {
+    width: 30px;
+    height: 30px;
+  }
+  &.ox-avatar-sm {
+    width: 37px;
+    height: 37px;
+  }
+  &.ox-avatar-md {
+    width: 44px;
+    height: 44px;
+  }
+  &.ox-avatar-lg {
+    width: 60px;
+    height: 60px;
+  }
+  &.ox-avatar-xl {
+    width: 70px;
+    height: 70px;
+  }
+  .ox-avatar-badge {
     position: absolute;
     width: 13px;
     height: 13px;
+    background: rgba(@ox-success, 1);
     border-radius: 50%;
     border: 2px solid white;
-    left: -5px;
+    bottom: -4px;
     font-size: 0.6rem;
     font-weight: 700;
     z-index: 200;
+    &.ox-avatar-warn {
+      background: rgba(@ox-warn, 1);
+    }
+
+    &.ox-avatar-primary {
+      background: rgba(@ox-primary, 1);
+    }
+
+    &.ox-avatar-danger {
+      background: rgba(@ox-danger, 1);
+    }
+
+    &.ox-avatar-dark {
+      background: rgba(@ox-dark, 1);
+    }
   }
   .ox-avatar-image {
     color: #fff;
@@ -50,7 +93,11 @@ body{
     box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.05);
     img {
       &:hover {
-        transform: scale(1.09);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.08);
+        overflow: hidden;
       }
     }
   }
@@ -64,38 +111,7 @@ body{
     border-radius: inherit;
   }
 }
-
-.ox-avatar-xs {
-  width: 30px;
-  height: 30px;
-}
-
-.ox-avatar-sm {
-  width: 37px;
-  height: 37px;
-}
-
-.ox-avatar-md {
-  width: 44px;
-  height: 44px;
-}
-
-.ox-avatar-lg {
-  width: 60px;
-  height: 60px;
-}
-
-.ox-avatar-xl {
-  width: 70px;
-  height: 70px;
-}
-
-.ox-avatar-square {
-  border-radius: 0%;
-}
-
-.ox-avatar-text {
-  /*background: rgba(var(--ox-primary), 1);*/
+.ox-avatar-icon {
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,33 +129,8 @@ body{
   transition: all 0.25s ease;
   -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.05);
-}
-
-.ox-avatar-badge {
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  background: rgba(var(--ox-success), 1);
-  border-radius: 50%;
-  border: 2px solid white;
-  bottom: -4px;
-  font-size: 0.6rem;
-  font-weight: 700;
-  z-index: 200;
-}
-
-.ox-avatar-warn {
-  background: rgba(@ox-warn, 1);
-}
-
-.ox-avatar-primary {
-  background: rgba(@ox-primary, 1);
-}
-
-.ox-avatar-danger {
-  background: rgba(@ox-danger, 1);
-}
-
-.ox-avatar-dark {
-  background: rgba(@ox-dark, 1);
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
