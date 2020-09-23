@@ -1,0 +1,718 @@
+:root {
+    --ox-gray: 72, 71, 77;
+    --ox-primary: 74, 54, 251;
+    --ox-success: 31, 179, 91;
+    --ox-danger: 255, 77, 79;
+    --ox-warn: 244, 196, 28;
+    --ox-dark: 0, 0, 0;
+    --ox-facebook: 17, 152, 246;
+    --ox-whatsapp: 15, 194, 68: ;
+    --ox-font: "Josefin Sans", sans-serif
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif
+}
+
+.ox-bg-primary {
+    background-color: rgba(74, 54, 251);
+    color: #fff
+}
+
+.ox-bg-success {
+    background-color: rgba(31, 179, 91);
+    color: #fff
+}
+
+.ox-bg-danger {
+    background-color: rgba(255, 77, 79);
+    color: #fff
+}
+
+.ox-bg-warn {
+    background-color: rgba(244, 196, 28);
+    color: #fff
+}
+
+.ox-bg-dark {
+    background-color: rgba(0, 0, 0);
+    color: #fff
+}
+
+.ox-p-4 {
+    padding: 4px
+}
+
+.ox-m-4 {
+    margin: 4px
+}
+
+.ox-breadcrumb {
+    font-family: "Josefin Sans", sans-serif;
+    box-shadow: 0 5px 10px -2px rgba(15, 17, 26, .1);
+    box-shadow: #000;
+    padding: 2px;
+    border-radius: 8px;
+    transition: all .25s ease
+}
+
+.ox-breadcrumb:hover {
+    transform: translate(0, 1px);
+    box-shadow: 0 1px 5px -2px rgba(15, 17, 26, .1)
+}
+
+.ox-breadcrumb ul {
+    display: flex;
+    list-style: none
+}
+
+.ox-breadcrumb ul li {
+    display: inline
+}
+
+.ox-breadcrumb ul li a {
+    color: rgba(72, 71, 77);
+    text-decoration: none
+}
+
+.ox-breadcrumb ul li a.ox-breadcrumb-active {
+    color: rgba(74, 54, 251)
+}
+
+.ox-breadcrumb ul li a.ox-breadcrumb-active.ox-success {
+    color: rgba(31, 179, 91)
+}
+
+.ox-breadcrumb ul li a.ox-breadcrumb-active.ox-danger {
+    color: rgba(255, 77, 79)
+}
+
+.ox-breadcrumb ul li a.ox-breadcrumb-active.ox-warn {
+    color: rgba(244, 196, 28)
+}
+
+.ox-breadcrumb ul li a.ox-breadcrumb-active.ox-dark {
+    color: rgba(0, 0, 0)
+}
+
+.ox-breadcrumb ul li+li::before {
+    padding: 8px;
+    color: rgba(72, 71, 77);
+    content: " \2022 "
+}
+
+.ox-btn {
+    font-family: "Josefin Sans", sans-serif;
+    outline: 0;
+    border: none;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    color: #000;
+    font-size: .8rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .25s ease
+}
+
+.ox-btn:hover {
+    transform: translate(0, -2px);
+    box-shadow: 0 5px 10px -2px rgba(74, 54, 251, .2)
+}
+
+.ox-btn:active {
+    transform: translate(0, -1px);
+    box-shadow: 0 1px 10px -2px rgba(0, 0, 0, .2)
+}
+
+.ox-btn.ox-btn-flat {
+    background-color: rgba(0, 0, 0, .04);
+    color: rgba(0, 0, 0)
+}
+
+.ox-btn.ox-btn-outline {
+    background-color: rgba(0, 0, 0, .04);
+    color: rgba(0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, .6)
+}
+
+.ox-btn-primary {
+    background-color: rgba(74, 54, 251);
+    color: #fff
+}
+
+.ox-btn-primary:hover {
+    transform: translate(0, -2px);
+    box-shadow: 0 5px 10px -2px rgba(74, 54, 251, .2)
+}
+
+.ox-btn-primary:active {
+    transform: translate(0, -1px);
+    filter: brightness(1.04);
+    box-shadow: 0 1px 10px -2px rgba(74, 54, 251, .2)
+}
+
+.ox-btn-primary.ox-btn-flat {
+    background-color: rgba(74, 54, 251, .1);
+    color: rgba(74, 54, 251)
+}
+
+.ox-btn-primary.ox-btn-outline {
+    background-color: rgba(74, 54, 251, .04);
+    color: rgba(74, 54, 251);
+    border: 2px solid #4a36fb
+}
+
+.block {
+    width: 100%
+}
+
+.ox-btn-square {
+    border-radius: 0
+}
+
+.ox-btn-success {
+    background-color: rgba(31, 179, 91);
+    color: #fff
+}
+
+.ox-btn-success:hover {
+    transform: translate(0, -2px);
+    box-shadow: 0 5px 10px -2px rgba(31, 179, 91, .2)
+}
+
+.ox-btn-success:active {
+    transform: translate(0, -1px);
+    filter: brightness(1.04);
+    box-shadow: 0 1px 10px -2px rgba(31, 179, 91, .2)
+}
+
+.ox-btn-success.ox-btn-flat {
+    background-color: rgba(31, 179, 91, .1);
+    color: rgba(31, 179, 91)
+}
+
+.ox-btn-success.ox-btn-outline {
+    background-color: rgba(31, 179, 91, .04);
+    color: rgba(31, 179, 91);
+    border: 2px solid #1fb35b
+}
+
+.ox-btn-danger {
+    background-color: rgba(255, 77, 79);
+    color: #fff
+}
+
+.ox-btn-danger:hover {
+    transform: translate(0, -2px);
+    box-shadow: 0 5px 10px -2px rgba(255, 77, 79, .2)
+}
+
+.ox-btn-danger:active {
+    transform: translate(0, -1px);
+    filter: brightness(1.04);
+    box-shadow: 0 1px 10px -2px rgba(255, 77, 79, .2)
+}
+
+.ox-btn-danger.ox-btn-flat {
+    background-color: rgba(255, 77, 79, .1);
+    color: rgba(255, 77, 79)
+}
+
+.ox-btn-danger.ox-btn-outline {
+    background-color: rgba(255, 77, 79, .04);
+    color: rgba(255, 77, 79);
+    border: 2px solid #ff4d4f
+}
+
+.ox-btn-warn {
+    background-color: rgba(244, 196, 28);
+    color: #fff
+}
+
+.ox-btn-warn:hover {
+    transform: translate(0, -2px);
+    box-shadow: 0 5px 10px -2px rgba(244, 196, 28, .2)
+}
+
+.ox-btn-warn:active {
+    transform: translate(0, -1px);
+    filter: brightness(1.04);
+    box-shadow: 0 1px 10px -2px rgba(244, 196, 28, .2)
+}
+
+.ox-btn-warn.ox-btn-flat {
+    background-color: rgba(244, 196, 28, .1);
+    color: rgba(244, 196, 28)
+}
+
+.ox-btn-warn.ox-btn-outline {
+    background-color: rgba(244, 196, 28, .04);
+    color: rgba(244, 196, 28);
+    border: 2px solid #f4c41c
+}
+
+.ox-btn-dark {
+    background-color: rgba(0, 0, 0);
+    color: #fff
+}
+
+.ox-btn-dark:hover {
+    transform: translate(0, -2px);
+    box-shadow: 0 5px 10px -2px rgba(0, 0, 0, .2)
+}
+
+.ox-btn-dark:active {
+    transform: translate(0, -1px);
+    filter: brightness(1.04);
+    box-shadow: 0 1px 10px -2px rgba(0, 0, 0, .2)
+}
+
+.ox-btn-dark.ox-btn-flat {
+    background-color: rgba(0, 0, 0, .04);
+    color: rgba(0, 0, 0)
+}
+
+.ox-btn-dark.ox-btn-outline {
+    background-color: rgba(0, 0, 0, .04);
+    color: rgba(0, 0, 0);
+    border: 2px solid #000
+}
+
+.ox-btn-rounded {
+    border-radius: 50px
+}
+
+.ox-group-buttons {
+    display: flex
+}
+
+.ox-group-buttons button:first-child {
+    border-radius: 8px 0 0 8px
+}
+
+.ox-group-buttons button {
+    border-radius: 0
+}
+
+.ox-group-buttons button:last-child {
+    border-radius: 0 8px 8px 0
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: .2
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0
+    }
+}
+
+.ox-card {
+    max-width: 350px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 20px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .25s ease
+}
+
+.ox-card:hover {
+    box-shadow: 0 5px 20px 0 rgba(124, 91, 91, .2);
+    transform: translate(0, -2px)
+}
+
+.ox-card .ox-card-img {
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+    height: 250px;
+    max-height: 250px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.ox-card .ox-card-img img {
+    width: 100%;
+    height: auto;
+    transition: all .25s ease
+}
+
+.ox-card .ox-card-img img:hover {
+    transform: scale(1.04)
+}
+
+.ox-card .ox-card-img .ox-card-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px
+}
+
+.ox-card .ox-card-img .ox-card-buttons button {
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 9px;
+    transition: all .25s ease;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #fff;
+    -webkit-backdrop-filter: saturate(300%) blur(20px);
+    backdrop-filter: saturate(300%) blur(20px)
+}
+
+.ox-card .ox-card-img .ox-card-buttons .text-dark {
+    color: #000
+}
+
+.ox-card .ox-card-text {
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.ox-card .ox-card-text .ox-title-card {
+    color: #000
+}
+
+.ox-card .ox-card-text p {
+    color: rgba(135, 145, 156)
+}
+
+.text-dark {
+    color: #000
+}
+
+.ox-mb-20 {
+    margin-bottom: 20px
+}
+
+.ox-grid {
+    overflow: hidden;
+    padding: 0
+}
+
+.ox-grid .ox-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.ox-grid .ox-row .ox-col-12 {
+    width: 100%;
+    position: relative
+}
+
+.ox-grid .ox-row .ox-col-6 {
+    width: 50%;
+    position: relative
+}
+
+.ox-grid .ox-row .ox-col-4 {
+    width: 33.33%;
+    position: relative
+}
+
+.ox-grid .ox-row .ox-col-3 {
+    width: 25%;
+    position: relative
+}
+
+.ox-grid .ox-row .ox-col-2 {
+    width: 16.66%;
+    position: relative
+}
+
+.ox-grid .ox-row .ox-col-1 {
+    width: 8.33%;
+    position: relative
+}
+
+.ox-flex-start {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row
+}
+
+.ox-flex-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: row
+}
+
+.ox-flex-end {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row
+}
+
+.ox-space-around {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row
+}
+
+.ox-space-between {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row
+}
+
+.ox-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+    transition: all .25s ease
+}
+
+.ox-input-group .ox-group-icon {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 10px;
+    z-index: 100
+}
+
+.ox-input-group:focus {
+    border: 2px solid rgba(25, 91, 255)
+}
+
+.ox-input-group .ox-form-control {
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background: rgba(240, 243, 244);
+    outline: 0;
+    font-family: "Josefin Sans", sans-serif;
+    transition: all .25s ease;
+    font-size: .9rem
+}
+
+.ox-input-group .ox-form-control.ox-input-square {
+    border-radius: 0
+}
+
+.ox-input-group .ox-form-control.ox-input-primary {
+    padding-left: 30px
+}
+
+.ox-input-group .ox-form-control.ox-input-primary:hover {
+    border: 2px solid rgba(0, 0, 0, .1)
+}
+
+.ox-input-group .ox-form-control.ox-input-primary:focus {
+    border: 2px solid rgba(74, 54, 251)
+}
+
+.ox-input-group .ox-form-control.ox-input-success {
+    padding-left: 30px
+}
+
+.ox-input-group .ox-form-control.ox-input-success:hover {
+    border: 2px solid rgba(0, 0, 0, .1)
+}
+
+.ox-input-group .ox-form-control.ox-input-success:focus {
+    border: 2px solid rgba(31, 179, 91)
+}
+
+.ox-input-group .ox-form-control.ox-input-danger {
+    padding-left: 30px
+}
+
+.ox-input-group .ox-form-control.ox-input-danger:hover {
+    border: 2px solid rgba(0, 0, 0, .1)
+}
+
+.ox-input-group .ox-form-control.ox-input-danger:focus {
+    border: 2px solid rgba(255, 77, 79)
+}
+
+.ox-input-group .ox-form-control.ox-input-warn {
+    padding-left: 30px
+}
+
+.ox-input-group .ox-form-control.ox-input-warn:hover {
+    border: 2px solid rgba(0, 0, 0, .1)
+}
+
+.ox-input-group .ox-form-control.ox-input-warn:focus {
+    border: 2px solid rgba(244, 196, 28)
+}
+
+.ox-input-group .ox-form-control.ox-input-dark {
+    padding-left: 30px
+}
+
+.ox-input-group .ox-form-control.ox-input-dark:hover {
+    border: 2px solid rgba(0, 0, 0, .1)
+}
+
+.ox-input-group .ox-form-control.ox-input-dark:focus {
+    border: 2px solid rgba(0, 0, 0)
+}
+
+::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, .2)
+}
+
+:-moz-placeholder {
+    color: rgba(0, 0, 0, .2);
+    opacity: 1
+}
+
+::-moz-placeholder {
+    color: rgba(0, 0, 0, .2);
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: rgba(0, 0, 0, .2)
+}
+
+.block {
+    width: 100%
+}
+
+.ox-tabs {
+    width: 20rem;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.ox-tabs input {
+    display: none
+}
+
+.ox-tabs label {
+    flex: 1;
+    text-align: center;
+    line-height: 3.6rem;
+    cursor: pointer;
+    transition: all .25s ease
+}
+
+.ox-tabs label:hover {
+    background-color: #fff
+}
+
+.ox-tabs input:checked+label {
+    box-shadow: inset 0 -.2rem rgba(23, 137, 230);
+    color: rgba(23, 137, 230)
+}
+
+.ox-tabs .ox-container-tabs {
+    display: flex;
+    overflow: hidden
+}
+
+.ox-tabs .ox-content-tab {
+    flex: 0 0 20rem;
+    padding: 2.4rem;
+    box-sizing: border-box
+}
+
+.ox-tabs:nth-of-type(2):checked~.ox-content-tab .ox-content-tab {
+    transform: translateX(-100%)
+}
+
+.ox-tabs:nth-of-type(3):checked~.ox-content-tab .ox-content-tab {
+    transform: translateX(-200%)
+}
+
+.ox-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
+
+.ox-tooltip:hover .ox-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, -2px)
+}
+
+.ox-tooltip .ox-tooltip-text {
+    font-size: .9rem;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    transition: all .25s ease;
+    opacity: 0;
+    max-width: 350px;
+    min-width: 120px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 12px;
+    position: absolute;
+    z-index: 10;
+    transform: translate(0, 1px);
+    background-color: rgba(33, 42, 62);
+    color: #fff
+}
+
+.ox-tooltip .ox-tooltip-top {
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px
+}
+
+.ox-tooltip .ox-tooltip-right {
+    top: -5px;
+    left: 125%
+}
+
+.ox-tooltip .ox-tooltip-bottom {
+    top: 135%;
+    left: 50%;
+    margin-left: -60px
+}
+
+.ox-tooltip .ox-tooltip-left {
+    top: -5px;
+    bottom: auto;
+    right: 128%
+}
+
+.ox-bg-primary {
+    background-color: rgba(23, 137, 230)!important;
+    color: #fff
+}
+
+.ox-bg-danger {
+    background-color: rgba(222, 27, 5)!important;
+    color: #fff
+}

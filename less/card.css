@@ -17,6 +17,9 @@ body {
   box-shadow: 0 5px 20px 0 rgba(124, 91, 91, 0.2);
   transform: translate(0, -2px);
 }
+.ox-card:hover .ox-card-img img {
+  transform: scale(1.04);
+}
 .ox-card .ox-card-img {
   display: flex;
   border-radius: 20px;
@@ -33,11 +36,9 @@ body {
 }
 .ox-card .ox-card-img img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   transition: all 0.25s ease;
-}
-.ox-card .ox-card-img img:hover {
-  transform: scale(1.04);
 }
 .ox-card .ox-card-img .ox-card-buttons {
   position: absolute;
