@@ -19,10 +19,10 @@
             <input placeholder="Square input" class="ox-form-control ox-input-square" type="text">
         </div>
         <div v-for="item in typeInput" class="ox-input-group">
+            <input :placeholder="[item.type +' input']" :class="['ox-form-control ox-input-'] + item.type" type="text">
             <div class="ox-group-icon ox-right-icon">
                 <i class='bx bx-user'></i>
             </div>
-            <input :placeholder="[item.type +' input']" :class="['ox-form-control ox-input-'] + item.type" type="text">
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

@@ -8,6 +8,19 @@
   -ms-flex-align: stretch;
   align-items: stretch;
   transition: all 0.25s ease;
+
+  input {
+    transition: all 0.25s ease;
+    &:hover + .ox-group-icon {
+      color: rgba(0, 0, 0, 0.5);
+    }
+    &:hover {
+      border: 2px solid rgba(0, 0, 0, 0.1);
+    }
+    &:focus {
+      border: 2px solid rgba(0, 0, 0, 0.1);
+    }
+  }
   .ox-group-icon {
     position: absolute;
     left: 0;
@@ -16,8 +29,7 @@
     height: 100%;
     padding-left: 10px;
     z-index: 100;
-    &.ox-right-icon {
-    }
+    color: rgba(0, 0, 0, 0.5);
   }
   &:focus {
     border: 2px solid rgba(25, 91, 255);
@@ -43,6 +55,9 @@
       &:focus {
         border: 2px solid rgba(@ox-primary);
       }
+      &:focus + .ox-group-icon {
+        color: rgba(@ox-primary);
+      }
     }
     &.ox-input-success {
       padding-left: 30px;
@@ -51,6 +66,9 @@
       }
       &:focus {
         border: 2px solid rgba(@ox-success);
+      }
+      &:focus + .ox-group-icon {
+        color: rgba(@ox-success);
       }
     }
     &.ox-input-danger {
@@ -61,6 +79,9 @@
       &:focus {
         border: 2px solid rgba(@ox-danger);
       }
+      &:focus + .ox-group-icon {
+        color: rgba(@ox-danger);
+      }
     }
     &.ox-input-warn {
       padding-left: 30px;
@@ -69,6 +90,9 @@
       }
       &:focus {
         border: 2px solid rgba(@ox-warn);
+      }
+      &:focus + .ox-group-icon {
+        color: rgba(@ox-warn);
       }
     }
     &.ox-input-dark {
@@ -79,22 +103,25 @@
       &:focus {
         border: 2px solid rgba(@ox-dark);
       }
+      &:focus + .ox-group-icon {
+        color: rgba(@ox-dark);
+      }
     }
   }
 }
 ::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
 }
 :-moz-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
 ::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
 :-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
 }
 .block {
   width: 100%;

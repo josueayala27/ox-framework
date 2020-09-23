@@ -20,6 +20,13 @@ body {
 .ox-card:hover .ox-card-img img {
   transform: scale(1.04);
 }
+.ox-card .ox-card-footer {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
 .ox-card .ox-card-img {
   display: flex;
   border-radius: 20px;
