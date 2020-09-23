@@ -3,9 +3,11 @@ buttons.forEach(btn => {
     btn.addEventListener('click', function(e) {
         let x = e.clientX - e.target.offsetLeft;
         let y = e.clientY - e.target.offsetTop;
-        let ripples = document.createElement('span');
+        let ripples = document.createElement('div');
         ripples.style.left = x + 'px';
         ripples.style.top = y + 'px';
+        ripples.className += "ox-ripple-container";
+        ripples.innerHTML = '<div class="ox-ripple"></div>';
         this.appendChild(ripples)
         setTimeout(() => {
             ripples.remove()
