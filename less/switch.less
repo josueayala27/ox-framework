@@ -1,0 +1,81 @@
+@import "./ox.less";
+.ox-switch {
+  min-width: 48px;
+  display: inline-flex;
+  align-items: center;
+  background: rgba(74, 54, 251, 0.15);
+  position: relative;
+  height: 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  &.ox-switch-square {
+    border-radius: 0px;
+    .ox-toggle-check {
+      border-radius: 0px;
+    }
+  }
+  &:hover {
+    background-color: rgba(@ox-primary, 0.25);
+  }
+  &.ox-switch-success {
+    &:hover {
+      background-color: rgba(@ox-success, 0.25);
+    }
+    .ox-toggle-check {
+      background: rgba(@ox-success);
+    }
+  }
+  &.ox-switch-danger {
+    &:hover {
+      background-color: rgba(@ox-danger, 0.25);
+    }
+    .ox-toggle-check {
+      background: rgba(@ox-danger);
+    }
+  }
+  &.ox-switch-warn {
+    &:hover {
+      background-color: rgba(@ox-warn, 0.25);
+    }
+    .ox-toggle-check {
+      background: rgba(@ox-warn);
+    }
+  }
+  &.ox-switch-dark {
+    &:hover {
+      background-color: rgba(@ox-dark, 0.25);
+    }
+    .ox-toggle-check {
+      background: rgba(@ox-dark);
+    }
+  }
+  input {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+    z-index: 100;
+    cursor: pointer;
+    &:checked ~ .ox-toggle-check {
+      left: 17px;
+      opacity: 1;
+    }
+  }
+  .ox-toggle-check {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: rgba(@ox-primary);
+    z-index: 200;
+    transition: all 0.25s ease;
+    box-shadow: 0 10px 20px 0 rgba(99, 107, 144, 0.35);
+    opacity: 0.4;
+  }
+}

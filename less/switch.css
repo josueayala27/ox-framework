@@ -1,0 +1,115 @@
+:root {
+  /*Ox color palette*/
+  --ox-gray: 72, 71, 77;
+  --ox-primary: 74, 54, 251;
+  --ox-success: 31, 179, 91;
+  --ox-danger: 236, 55, 81;
+  --ox-warn: 244, 196, 28;
+  --ox-dark: 0, 0, 0;
+  /*Ox social colors*/
+  --ox-facebook: 17, 152, 246;
+  --ox-whatsapp: 15, 194, 68:;
+  /*Ox typography*/
+  --ox-font: "Josefin Sans", sans-serif;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+.ox-bg-primary {
+  background-color: rgba(74, 54, 251);
+  color: white;
+}
+.ox-bg-success {
+  background-color: rgba(31, 179, 91);
+  color: white;
+}
+.ox-bg-danger {
+  background-color: rgba(236, 55, 81);
+  color: white;
+}
+.ox-bg-warn {
+  background-color: rgba(244, 196, 28);
+  color: white;
+}
+.ox-bg-dark {
+  background-color: rgba(0, 0, 0);
+  color: white;
+}
+.ox-p-4 {
+  padding: 4px;
+}
+.ox-m-4 {
+  margin: 4px;
+}
+.ox-switch {
+  min-width: 48px;
+  display: inline-flex;
+  align-items: center;
+  background: rgba(74, 54, 251, 0.15);
+  position: relative;
+  height: 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.ox-switch.ox-switch-square {
+  border-radius: 0px;
+}
+.ox-switch.ox-switch-square .ox-toggle-check {
+  border-radius: 0px;
+}
+.ox-switch:hover {
+  background-color: rgba(74, 54, 251, 0.25);
+}
+.ox-switch.ox-switch-success:hover {
+  background-color: rgba(31, 179, 91, 0.25);
+}
+.ox-switch.ox-switch-success .ox-toggle-check {
+  background: rgba(31, 179, 91);
+}
+.ox-switch.ox-switch-danger:hover {
+  background-color: rgba(236, 55, 81, 0.25);
+}
+.ox-switch.ox-switch-danger .ox-toggle-check {
+  background: rgba(236, 55, 81);
+}
+.ox-switch.ox-switch-warn:hover {
+  background-color: rgba(244, 196, 28, 0.25);
+}
+.ox-switch.ox-switch-warn .ox-toggle-check {
+  background: rgba(244, 196, 28);
+}
+.ox-switch.ox-switch-dark:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.ox-switch.ox-switch-dark .ox-toggle-check {
+  background: rgba(0, 0, 0);
+}
+.ox-switch input {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0;
+  z-index: 100;
+  cursor: pointer;
+}
+.ox-switch input:checked ~ .ox-toggle-check {
+  left: 17px;
+  opacity: 1;
+}
+.ox-switch .ox-toggle-check {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: rgba(74, 54, 251);
+  z-index: 200;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 20px 0 rgba(99, 107, 144, 0.35);
+  opacity: 0.4;
+}
