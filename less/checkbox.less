@@ -19,6 +19,16 @@ body {
     color: rgba(@ox-dark);
   }
   input {
+    &:disabled {
+      ~ label {
+        cursor: not-allowed;
+      }
+      ~ .ox-checked {
+        cursor: not-allowed;
+        background-color: rgba(226, 232, 240) !important;
+        transform: translate(0, -2px);
+      }
+    }
     cursor: pointer;
     opacity: 0;
     position: absolute;
