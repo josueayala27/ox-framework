@@ -52,6 +52,7 @@ body {
   transition: all 0.25s ease;
 }
 .ox-input-group input {
+  display: inline-block;
   transition: all 0.25s ease;
 }
 .ox-input-group input:hover + .ox-group-icon {

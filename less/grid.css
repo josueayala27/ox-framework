@@ -60,30 +60,85 @@ body {
   justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  /*Para moviles*/
 }
-.ox-grid .ox-row .ox-col-12 {
-  width: 100%;
-  position: relative;
+@media only screen and (min-device-max-width: 320px) and (max-device-max-width: 640px) {
+  .ox-grid .ox-row .ox-col-sm-12 {
+    max-width: 100%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-sm-6 {
+    max-width: 50%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-sm-4 {
+    max-width: 33.333333%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-sm-3 {
+    max-width: 25%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-sm-2 {
+    max-width: 16.66%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-sm-1 {
+    max-width: 8.33%;
+    position: relative;
+  }
 }
-.ox-grid .ox-row .ox-col-6 {
-  width: 50%;
-  position: relative;
+@media only screen and (min-device-max-width: 640px) and (max-device-max-width: 1024px) {
+  .ox-grid .ox-row .ox-col-md-12 {
+    max-width: 100%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-md-6 {
+    max-width: 50%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-md-4 {
+    max-width: 33.333333%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-md-3 {
+    max-width: 25%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-md-2 {
+    max-width: 16.66%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-md-1 {
+    max-width: 8.33%;
+    position: relative;
+  }
 }
-.ox-grid .ox-row .ox-col-4 {
-  width: 33.33%;
-  position: relative;
-}
-.ox-grid .ox-row .ox-col-3 {
-  width: 25%;
-  position: relative;
-}
-.ox-grid .ox-row .ox-col-2 {
-  width: 16.66%;
-  position: relative;
-}
-.ox-grid .ox-row .ox-col-1 {
-  width: 8.33%;
-  position: relative;
+@media only screen and (min-max-width: 1024px) {
+  .ox-grid .ox-row .ox-col-12 {
+    max-width: 100%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-6 {
+    max-width: 50%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-4 {
+    max-width: 33.333333%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-3 {
+    max-width: 25%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-2 {
+    max-width: 16.66%;
+    position: relative;
+  }
+  .ox-grid .ox-row .ox-col-1 {
+    max-width: 8.33%;
+    position: relative;
+  }
 }
 .ox-flex-start {
   display: flex;

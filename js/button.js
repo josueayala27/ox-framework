@@ -14,3 +14,7 @@ buttons.forEach(btn => {
         }, 1000)
     })
 })
+
+if (jTexfield.length() < 2) {
+    System.out.println("String is not empty and length is: " + str.length());
+}

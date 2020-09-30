@@ -3,7 +3,7 @@
   --ox-gray: 72, 71, 77;
   --ox-primary: 74, 54, 251;
   --ox-success: 31, 179, 91;
-  --ox-danger: 255, 77, 79;
+  --ox-danger: 236, 55, 81;
   --ox-warn: 244, 196, 28;
   --ox-dark: 0, 0, 0;
   /*Ox social colors*/
@@ -24,7 +24,7 @@ body {
   color: white;
 }
 .ox-bg-danger {
-  background-color: rgba(255, 77, 79);
+  background-color: rgba(236, 55, 81);
   color: white;
 }
 .ox-bg-warn {
@@ -151,26 +151,26 @@ body {
   border: 2px solid rgba(31, 179, 91, 1);
 }
 .ox-btn-danger {
-  background-color: rgba(255, 77, 79);
+  background-color: rgba(236, 55, 81);
   color: white;
 }
 .ox-btn-danger:hover {
   transform: translate(0, -2px);
-  box-shadow: 0px 5px 10px -2px rgba(255, 77, 79, 0.2);
+  box-shadow: 0px 5px 10px -2px rgba(236, 55, 81, 0.2);
 }
 .ox-btn-danger:active {
   transform: translate(0, -1px);
   filter: brightness(1.04);
-  box-shadow: 0px 1px 10px -2px rgba(255, 77, 79, 0.2);
+  box-shadow: 0px 1px 10px -2px rgba(236, 55, 81, 0.2);
 }
 .ox-btn-danger.ox-btn-flat {
-  background-color: rgba(255, 77, 79, 0.1);
-  color: rgba(255, 77, 79);
+  background-color: rgba(236, 55, 81, 0.1);
+  color: rgba(236, 55, 81);
 }
 .ox-btn-danger.ox-btn-outline {
-  background-color: rgba(255, 77, 79, 0.04);
-  color: rgba(255, 77, 79);
-  border: 2px solid rgba(255, 77, 79, 1);
+  background-color: rgba(236, 55, 81, 0.04);
+  color: rgba(236, 55, 81);
+  border: 2px solid rgba(236, 55, 81, 1);
 }
 .ox-btn-warn {
   background-color: rgba(244, 196, 28);
@@ -244,4 +244,20 @@ body {
     height: 600px;
     opacity: 0;
   }
+}
+.btn {
+  /*Para evitar bordes no deseados en el boton*/
+  outline: none;
+  border: none;
+  display: inline-block;
+  /*Le damos un padding para que tenga un pequeño margen al interior del boton*/
+  padding: 10px 20px;
+  /*El color del texto sera blanco, puedes utilizar codigo rgba() o hexadecimal*/
+  color: white;
+  /*Aquí eliminamos los estilos de la etiqueta <a>*/
+  text-decoration: none;
+  /*Le damos un pequeño borde al boton para que tenga un mejor estilo*/
+  border-radius: 8px;
+  /*Y se aplica un cursor: pointer, para que cambie el cursor*/
+  cursor: pointer;
 }

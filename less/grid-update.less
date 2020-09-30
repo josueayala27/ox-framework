@@ -1,0 +1,103 @@
+// Variables
+@grid-columns: one, two, three, four, five, six, seven, eight, nine, ten, eleven,
+  twelve;
+@grid-gutter-width: 1%;
+
+@small-screen: 640px;
+@medium-screen: 768px;
+@large-screen: 1024px;
+
+// Mixins
+#grid {
+  .row(@gutter: @grid-gutter-width) {
+    margin: (-@gutter / 2);
+
+    letter-spacing: -0.31em;
+    *letter-spacing: normal;
+    word-spacing: -0.43em;
+  }
+
+  .column(@gutter: @grid-gutter-width) {
+    display: inline-block;
+    box-sizing: border-box;
+    width: (100% - @gutter);
+    margin: (@gutter / 2);
+    vertical-align: top;
+
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+
+  .generate (@size: ~"", @columns: @grid-columns, @gutter: @grid-gutter-width) {
+    .loop (@i: 1) when (@i <= length(@columns)) {
+      @col: extract(@columns, @i);
+      @count: length(@columns);
+
+      > .@{col}@{size} {
+        width: (100% / @count * @i - @gutter);
+      }
+
+      .loop(@i + 1);
+    }
+
+    .loop;
+  }
+}
+
+// Code
+.grid {
+  #grid > .row;
+
+  > .column {
+    #grid > .column;
+  }
+
+  #grid > .generate();
+
+  @media (min-width: @small-screen) {
+    #grid > .generate(-small);
+  }
+
+  @media (min-width: @medium-screen) {
+    #grid > .generate(-medium);
+  }
+
+  @media (min-width: @large-screen) {
+    #grid > .generate(-large);
+  }
+}
+
+// Demo Stuff
+body {
+  margin: 1em;
+
+  background-color: #eee;
+}
+
+h1 {
+  color: steelblue;
+
+  text-align: center;
+}
+
+.grid > .column {
+  padding: 1em;
+  border: 1px solid fade(#000, 10);
+
+  background-color: #fff;
+  color: #999;
+
+  text-align: center;
+
+  //transition: all 400ms ease-in-out;
+}
+
+.grid.adaptive > .column {
+  width: 100%;
+
+  &.six {
+    @media (min-width: @small-screen) {
+      width: 49%;
+    }
+  }
+}

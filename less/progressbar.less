@@ -1,0 +1,42 @@
+@import "../less/ox.less";
+.ox-progress {
+  display: -ms-flexbox;
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0.75rem;
+  background-color: rgba(243, 247, 248);
+  border-radius: 50px;
+  position: relative;
+  transition: all 0.25s ease;
+  &:hover {
+    background-color: rgba(238, 241, 242);
+  }
+  .ox-progress-bar {
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.ox-primary-bar {
+      background-color: rgba(@ox-primary);
+      color: white;
+    }
+    &.ox-success-bar {
+      background-color: rgba(@ox-success);
+      color: white;
+    }
+    &.ox-danger-bar {
+      background-color: rgba(@ox-danger);
+      color: white;
+    }
+    &.ox-warn-bar {
+      background-color: rgba(@ox-warn);
+      color: white;
+    }
+    &.ox-dark-bar {
+      background-color: rgba(@ox-dark);
+      color: white;
+    }
+  }
+}

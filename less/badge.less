@@ -1,0 +1,77 @@
+@import "./ox.less";
+.ox-badge-square {
+  border-radius: 0px !important;
+}
+.ox-badge {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #2c3e50;
+  color: #ffffff;
+  border-radius: 3rem;
+  text-align: center;
+  padding: 4px;
+  line-height: inherit;
+  align-items: center;
+  font-size: 0.8rem;
+  position: relative;
+  &.ox-badge-primary {
+    background-color: rgba(@ox-primary, 0.2);
+    color: rgba(@ox-primary);
+    &.ox-badge-outline {
+      background-color: #fff;
+      border: 2px solid rgba(@ox-primary, 0.6);
+    }
+    &.ox-badge-solid {
+      background-color: rgba(@ox-primary);
+      color: white;
+    }
+  }
+  &.ox-badge-success {
+    background-color: rgba(@ox-success, 0.2);
+    color: rgba(@ox-success);
+    &.ox-badge-outline {
+      background-color: #fff;
+      border: 2px solid rgba(@ox-success, 0.6);
+    }
+    &.ox-badge-solid {
+      background-color: rgba(@ox-success);
+      color: white;
+    }
+  }
+  &.ox-badge-danger {
+    background-color: rgba(@ox-danger, 0.2);
+    color: rgba(@ox-danger);
+    &.ox-badge-outline {
+      background-color: #fff;
+      border: 2px solid rgba(@ox-danger, 0.6);
+    }
+    &.ox-badge-solid {
+      background-color: rgba(@ox-danger);
+      color: white;
+    }
+  }
+  &.ox-badge-warn {
+    background-color: rgba(@ox-warn, 0.2);
+    color: rgba(@ox-warn);
+    &.ox-badge-outline {
+      background-color: #fff;
+      border: 2px solid rgba(@ox-warn, 0.6);
+    }
+    &.ox-badge-solid {
+      background-color: rgba(@ox-warn);
+      color: white;
+    }
+  }
+  &.ox-badge-dark {
+    background-color: rgba(@ox-dark, 0.2);
+    color: rgba(@ox-dark);
+    &.ox-badge-outline {
+      background-color: #fff;
+      border: 2px solid rgba(@ox-dark, 0.6);
+    }
+    &.ox-badge-solid {
+      background-color: rgba(@ox-dark);
+      color: white;
+    }
+  }
+}

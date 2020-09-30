@@ -1,0 +1,84 @@
+:root {
+  /*Ox color palette*/
+  --ox-gray: 72, 71, 77;
+  --ox-primary: 74, 54, 251;
+  --ox-success: 31, 179, 91;
+  --ox-danger: 255, 77, 79;
+  --ox-warn: 244, 196, 28;
+  --ox-dark: 0, 0, 0;
+  /*Ox social colors*/
+  --ox-facebook: 17, 152, 246;
+  --ox-whatsapp: 15, 194, 68:;
+  /*Ox typography*/
+  --ox-font: "Josefin Sans", sans-serif;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+.ox-bg-primary {
+  background-color: rgba(74, 54, 251);
+  color: white;
+}
+.ox-bg-success {
+  background-color: rgba(31, 179, 91);
+  color: white;
+}
+.ox-bg-danger {
+  background-color: rgba(255, 77, 79);
+  color: white;
+}
+.ox-bg-warn {
+  background-color: rgba(244, 196, 28);
+  color: white;
+}
+.ox-bg-dark {
+  background-color: rgba(0, 0, 0);
+  color: white;
+}
+.ox-p-4 {
+  padding: 4px;
+}
+.ox-m-4 {
+  margin: 4px;
+}
+.ox-progress {
+  display: -ms-flexbox;
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0.75rem;
+  background-color: rgba(243, 247, 248);
+  border-radius: 50px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+.ox-progress:hover {
+  background-color: rgba(238, 241, 242);
+}
+.ox-progress .ox-progress-bar {
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ox-progress .ox-progress-bar.ox-primary-bar {
+  background-color: rgba(74, 54, 251);
+  color: white;
+}
+.ox-progress .ox-progress-bar.ox-success-bar {
+  background-color: rgba(31, 179, 91);
+  color: white;
+}
+.ox-progress .ox-progress-bar.ox-danger-bar {
+  background-color: rgba(255, 77, 79);
+  color: white;
+}
+.ox-progress .ox-progress-bar.ox-warn-bar {
+  background-color: rgba(244, 196, 28);
+  color: white;
+}
+.ox-progress .ox-progress-bar.ox-dark-bar {
+  background-color: rgba(0, 0, 0);
+  color: white;
+}

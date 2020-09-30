@@ -1,0 +1,119 @@
+:root {
+  /*Ox color palette*/
+  --ox-gray: 72, 71, 77;
+  --ox-primary: 74, 54, 251;
+  --ox-success: 31, 179, 91;
+  --ox-danger: 236, 55, 81;
+  --ox-warn: 244, 196, 28;
+  --ox-dark: 0, 0, 0;
+  /*Ox social colors*/
+  --ox-facebook: 17, 152, 246;
+  --ox-whatsapp: 15, 194, 68:;
+  /*Ox typography*/
+  --ox-font: "Josefin Sans", sans-serif;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+.ox-bg-primary {
+  background-color: rgba(74, 54, 251);
+  color: white;
+}
+.ox-bg-success {
+  background-color: rgba(31, 179, 91);
+  color: white;
+}
+.ox-bg-danger {
+  background-color: rgba(236, 55, 81);
+  color: white;
+}
+.ox-bg-warn {
+  background-color: rgba(244, 196, 28);
+  color: white;
+}
+.ox-bg-dark {
+  background-color: rgba(0, 0, 0);
+  color: white;
+}
+.ox-p-4 {
+  padding: 4px;
+}
+.ox-m-4 {
+  margin: 4px;
+}
+.ox-badge-square {
+  border-radius: 0px !important;
+}
+.ox-badge {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #2c3e50;
+  color: #ffffff;
+  border-radius: 3rem;
+  text-align: center;
+  padding: 4px;
+  line-height: inherit;
+  align-items: center;
+  font-size: 0.8rem;
+  position: relative;
+}
+.ox-badge.ox-badge-primary {
+  background-color: rgba(74, 54, 251, 0.2);
+  color: rgba(74, 54, 251);
+}
+.ox-badge.ox-badge-primary.ox-badge-outline {
+  background-color: #fff;
+  border: 2px solid rgba(74, 54, 251, 0.6);
+}
+.ox-badge.ox-badge-primary.ox-badge-solid {
+  background-color: rgba(74, 54, 251);
+  color: white;
+}
+.ox-badge.ox-badge-success {
+  background-color: rgba(31, 179, 91, 0.2);
+  color: rgba(31, 179, 91);
+}
+.ox-badge.ox-badge-success.ox-badge-outline {
+  background-color: #fff;
+  border: 2px solid rgba(31, 179, 91, 0.6);
+}
+.ox-badge.ox-badge-success.ox-badge-solid {
+  background-color: rgba(31, 179, 91);
+  color: white;
+}
+.ox-badge.ox-badge-danger {
+  background-color: rgba(236, 55, 81, 0.2);
+  color: rgba(236, 55, 81);
+}
+.ox-badge.ox-badge-danger.ox-badge-outline {
+  background-color: #fff;
+  border: 2px solid rgba(236, 55, 81, 0.6);
+}
+.ox-badge.ox-badge-danger.ox-badge-solid {
+  background-color: rgba(236, 55, 81);
+  color: white;
+}
+.ox-badge.ox-badge-warn {
+  background-color: rgba(244, 196, 28, 0.2);
+  color: rgba(244, 196, 28);
+}
+.ox-badge.ox-badge-warn.ox-badge-outline {
+  background-color: #fff;
+  border: 2px solid rgba(244, 196, 28, 0.6);
+}
+.ox-badge.ox-badge-warn.ox-badge-solid {
+  background-color: rgba(244, 196, 28);
+  color: white;
+}
+.ox-badge.ox-badge-dark {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0);
+}
+.ox-badge.ox-badge-dark.ox-badge-outline {
+  background-color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+}
+.ox-badge.ox-badge-dark.ox-badge-solid {
+  background-color: rgba(0, 0, 0);
+  color: white;
+}
