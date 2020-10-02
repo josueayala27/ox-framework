@@ -5,6 +5,9 @@ Ox is a framework of UI/UX components created with love to make projects easily 
 Hey, at the moment you can only use ox-framework through the beautiful cdn, using it is as easy as biting into an apple :)
 
 ## Quick start 🔧
+
+If you have any questions, visit the official documentation:[doc](https://jos-nuxt-app.web.app/docs/installation)
+
 Several quick start options are available:
 
 - Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
