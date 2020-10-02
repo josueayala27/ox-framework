@@ -6,7 +6,7 @@ Hey, at the moment you can only use ox-framework through the beautiful cdn, usin
 
 ## Quick start 🔧
 
-If you have any questions, visit the official documentation:[doc](https://jos-nuxt-app.web.app/docs/installation)
+If you have any questions, visit the official documentation: [doc](https://jos-nuxt-app.web.app/docs/installation)
 
 Several quick start options are available:
 
